@@ -25,3 +25,49 @@ for(l=0;l<arr.length;l++){
               max=arr[l].length;
         }
       }   console.log(max);
+
+
+      //2nd question
+      //let arr=[1 ,2 ,2 ,3 ,3 ,3 ,5]
+function minMAx(arr){
+  let obj={};
+  let count=0;
+  let arr1=[];
+  for(i=0;i<arr.length;i++){
+       for( j=i;j<arr.length;j++){
+           if(obj[arr[i]]==undefined){
+               obj[arr[i]]=1 ;
+           }else{
+             obj[arr[i]]++;
+       }  break;
+}}    
+console.log(obj);
+
+function max(){
+       let bag=0;
+       for(let i in obj){
+       if(obj[arr[i]]>bag){
+             bag=obj[arr[i]];
+  }  } 
+         return bag;
+}
+   x=max(obj[arr[i]]);
+   console.log(x);
+
+function min(){
+        let bag1=100;
+        for(let i in obj){
+     if(obj[arr[i]]<bag1){
+         bag1=obj[arr[i]];
+   }  }
+   return bag1 ;
+      }
+     y=min(obj[arr[i]]);
+        console.log(y);
+   
+         console.log(((15*(y)))+(2*(x)));
+  
+}   
+minMAx([1,1,1,2,2,2,3,3,3,3,5,5])
+
+
