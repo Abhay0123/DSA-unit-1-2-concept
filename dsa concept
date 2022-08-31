@@ -1,0 +1,27 @@
+// 1st question......
+function drome(a){
+   let str="";
+   for(i=a.length-1;i>=0;i--){
+     str=str+a[i];
+     
+   }if(str==a){
+     return true;
+   }else{
+     return false;
+   }
+ }
+   let string="thisracecarisgood";
+   let arr=[];
+   for(j=0;j<string.length;j++){
+          let bag="";
+     for(k=j;k<string.length;k++){
+         bag=bag+string[k];
+          arr.push(bag);
+     }
+   }     let max=0;
+
+for(l=0;l<arr.length;l++){
+        if(drome(arr[l]) && max<arr[l].length){
+              max=arr[l].length;
+        }
+      }   console.log(max);
